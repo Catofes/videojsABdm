@@ -8,6 +8,8 @@ Video.js 的一个弹幕插件，仅仅实现了加载显示弹幕的功能。
 
 Thanks To :
 
-Video.js
-Bootstrap
-ABPlayerHTML5
+-Video.js
+
+-Bootstrap
+
+-ABPlayerHTML5
