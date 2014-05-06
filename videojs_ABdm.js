@@ -6,14 +6,27 @@ function ABPinit(){
 	//if (this.TOUCH_ENABLED && this.options()['nativeControlsForTouch'] !== false) {
 	//	this.el().insertBefore(danmu_div,this.el().children[0]);	
 	//}else{
-		this.el().insertBefore(danmu_div,this.el().getElementsByClassName('vjs-poster')[0]);
-	//}
-	danmu_control = document.createElement('dev');
+	this.el().insertBefore(danmu_div,this.el().getElementsByClassName('vjs-poster')[0]);
+	//Create send danmu div
+	danmu_send_div = document.createElement('div');
+	danmu_send_div.className = 'vjs-danmu-send-hidden';
+	this.el().insertBefore(danmu_send_div);
+	//Create show/hide danmu button	
+	danmu_control = document.createElement('div');
 	danmu_control.className= 'vjs-danmu-control vjs-menu-button vjs-control';
 	danmu_control_content = document.createElement('span');
 	danmu_control_content.className='glyphicon glyphicon-eye-open';
 	danmu_control.appendChild(danmu_control_content);
 	this.el().getElementsByClassName('vjs-control-bar')[0].appendChild(danmu_control);
+	//Create show/hide send danmu div
+	danmu_send_control = document.createElement('div');
+	danmu_send_control.className= 'vjs-danmu-control vjs-menu-button vjs-control';
+	danmu_send_control_content = document.createElement('span');
+	danmu_send_control_content.className='glyphicon glyphicon-eye-open';
+	danmu_send_control.appendChild(danmu_send_control_content);
+	this.el().getElementsByClassName('vjs-control-bar')[0].appendChild(danmu_send_control);
+	
+
 	this.binddm=function(){
 		video=this.el().children[0];
 		if(typeof CommentManager !== "undefined"){
