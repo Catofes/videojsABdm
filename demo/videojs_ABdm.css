@@ -1,0 +1,124 @@
+.video-js .vjs-danmu{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	pointer-events: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.video-js .vjs-danmu .cmt{
+	white-space: nowrap;
+	padding: 3px 0 0 0;
+	margin: 0;
+	line-height: 100%;
+	font-family: Simhei, Simsun, Heiti, "wqy-zenhei", "MS Mincho", "Meiryo", "Microsoft Yahei", monospace;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: #fff;
+	letter-spacing:0;
+	font-size:25px;
+	position:absolute;
+	word-break:none;
+	text-wrap:none;
+	border:0 !important;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.video-js .vjs-danmu .cmt.noshadow{
+	text-shadow: none !important;
+	-webkit-text-stroke: none !important;
+}
+.video-js .vjs-danmu .cmt.rshadow{
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white !important;
+}
+
+.vjs-default-skin .vjs-danmu-control {
+	width: 3.8em;
+	cursor: pointer;
+	float: right;
+	font-size: 16px;
+	text-align: right;
+	margin-top: 4px;
+}
+.vjs-danmu{
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.video-js .vjs-danmu .cmt{
+	white-space: nowrap;
+	padding:3px 0 0 0;margin:0;
+	line-height:100%;
+	font-family:Simhei, Simsun, Heiti, "wqy-zenhei", "MS Mincho", "Meiryo", "Microsoft Yahei", monospace;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color:#fff;
+	letter-spacing:0;
+	font-size:25px;
+	position:absolute;
+	word-break:none;
+	text-wrap:none;
+	border:0 !important;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.video-js .vjs-danmu .cmt.noshadow{
+	text-shadow: none !important;
+	-webkit-text-stroke: none !important;
+}
+.video-js .vjs-danmu .cmt.rshadow{
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white !important;
+}
+
+.vjs-default-skin .vjs-danmu-control {
+	/*width: 3.8em;*/
+	cursor: pointer;
+	float: right;
+	font-size: 16px;
+	text-align: right;
+	margin-top: 4px;
+}
+
+.vjs-default-skin .vjs-danmu-control .vjs-danmu-control-text {
+	width: 30px;
+}
+
+.video-js .vjs-danmu-send-hidden {
+	width: 0px;
+	height: 0px;
+}
+
+.video-js .vjs-danmu-send-show {
+	position:absolute;
+	width: 60%;
+	height: 240px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 120px;
+	margin-bottom: 120px;
+	background: rgba(132, 255, 245, 0.79);
+	background: transparent\9;
+	zoom: 1\8; /* required for the filters */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; /* IE8 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); /* IE5.5-7 */
+}
