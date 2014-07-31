@@ -96,7 +96,8 @@
 	float: right;
 	font-size: 16px;
 	text-align: right;
-	margin-top: 4px;
+	margin-top: 6px;
+	margin-right: 14px;
 }
 
 .vjs-default-skin .vjs-danmu-control .vjs-danmu-control-text {
