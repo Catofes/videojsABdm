@@ -33,7 +33,7 @@ function ABPinit(){
 					video.hasStalled = true;
 					_this.cmManager.stopTimer();
 				}else
-				lastPosition = video.currentTime;
+				  lastPosition = video.currentTime;
 			});
 
 			video.addEventListener("timeupdate", function(){
@@ -64,11 +64,23 @@ function ABPinit(){
 			video.addEventListener("seeked",function(){
 				_this.cmManager.clear();
 			});
+			//fix IE
+			var isIE = function(){
+				var b = document.createElement('b')
+					b.innerHTML = '<!--[if IE]><i></i><![endif]-->'
+					return b.getElementsByTagName('i').length === 1
+			}
 
-			if(window){
-				window.addEventListener("resize", function(){
+			if(isIE()){
+				video.addEventListener("resize",function(){
 					_this.cmManager.setBounds();
 				});
+			}else{
+				if(window){
+					window.addEventListener("resize", function(){
+						_this.cmManager.setBounds();
+					});
+				}
 			}
 
 			//Bind Control to button
