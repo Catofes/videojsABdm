@@ -65,22 +65,13 @@ function ABPinit(){
 				_this.cmManager.clear();
 			});
 			//fix IE
-			var isIE = function(){
-				var b = document.createElement('b')
-					b.innerHTML = '<!--[if IE]><i></i><![endif]-->'
-					return b.getElementsByTagName('i').length === 1
-			}
-
-			if(isIE()){
-				video.addEventListener("resize",function(){
+			video.addEventListener("resize",function(){
+				_this.cmManager.setBounds();
+			});
+			if(window){
+				window.addEventListener("resize", function(){
 					_this.cmManager.setBounds();
 				});
-			}else{
-				if(window){
-					window.addEventListener("resize", function(){
-						_this.cmManager.setBounds();
-					});
-				}
 			}
 
 			//Bind Control to button
