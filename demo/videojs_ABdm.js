@@ -64,6 +64,10 @@ function ABPinit(){
 			video.addEventListener("seeked",function(){
 				_this.cmManager.clear();
 			});
+			//fix IE
+			video.onresize=function(){
+				_this.cmManager.setBounds();
+			};
 
 			if(window){
 				window.addEventListener("resize", function(){
