@@ -65,9 +65,9 @@ function ABPinit(){
 				_this.cmManager.clear();
 			});
 			//fix IE
-			video.addEventListener("resize",function(){
+			video.onresize=function(){
 				_this.cmManager.setBounds();
-			});
+			};
 			if(window){
 				window.addEventListener("resize", function(){
 					_this.cmManager.setBounds();
